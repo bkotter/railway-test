@@ -1,0 +1,17 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 10,
+    "restartPolicy": "Always"
+  },
+  "services": [
+    {
+      "name": "my-backend",
+      "path": "./my-backend"
+    }
+  ]
+}
